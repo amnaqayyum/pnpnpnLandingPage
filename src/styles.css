@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+section{
+    margin-block: 8rem;
+}
+h1 {
+    color: #64bdf0;
+}
+.text-blue {
+    color: blue;
+}

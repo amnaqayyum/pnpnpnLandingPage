@@ -1,0 +1,19 @@
+<h1>Lorem ipsum dolor sit amet.</h1>
+<p class="text-end text-blue">Lorem ipsum dolor sit amet.</p>
+<owl-carousel-o [options]="customOptions">
+  <ng-template
+    carouselSlide
+    *ngFor="let item of carouselData"
+    (changed)="getPassedData($event)"
+  >
+    <div class="carousel-card">
+      <h4>{{ item.title }}</h4>
+      <p>{{ item.desc }}</p>
+      <div class="d-flex justify-content-end">
+        <button class="btn btn-dark rounded rounded-circle btn-icon">
+          <i class="bi bi-plus"></i>
+        </button>
+      </div>
+    </div>
+  </ng-template>
+</owl-carousel-o>

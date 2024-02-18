@@ -1,0 +1,12 @@
+.img-thumb {
+    height: 130px; 
+    width: 100%;
+    aspect-ratio: 1;
+    margin-bottom: 1.25rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}

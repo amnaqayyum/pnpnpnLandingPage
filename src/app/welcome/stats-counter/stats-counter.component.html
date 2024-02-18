@@ -1,0 +1,11 @@
+<div class="row justify-content-center">
+  <!-- countdown component with counter data passed to it as input -->
+  <!-- <app-coundown-timer class="col-md-4" [countData]="item"></app-coundown-timer> -->
+  <div class="col-md-3" *ngFor="let countData of counter">
+    <div class="text-center px-xl-3 p-0">
+      <h2 class="fw-bold" [countUp]="countData.targetValue"></h2>
+      <h3>{{ countData.countName }}</h3>
+      <p>{{ countData.countText }}</p>
+    </div>
+  </div>
+</div>

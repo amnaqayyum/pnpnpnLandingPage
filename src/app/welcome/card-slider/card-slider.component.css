@@ -1,0 +1,43 @@
+.carousel-card {
+    padding: 1.5rem;
+    border-radius: 16px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    transition: all 0.2s ease-in;
+}
+.carousel-card:hover{
+    transform: scale(1.05);
+}
+
+.btn-icon {
+    padding: 0;
+    height: 35px;
+    width: 35px;
+}
+
+::ng-deep .owl-stage {
+    margin-top: 50px; 
+}
+
+::ng-deep .owl-carousel .owl-item.active {
+    transform: translateY(-40px);
+    opacity: 1;
+}
+
+::ng-deep .owl-carousel .owl-item {
+    padding: 10px;
+    transform: translateY(0px);
+    opacity: 0;
+    transition: all 0.5s ease-in;
+    transition-delay: 0.3s;
+}
+
+::ng-deep .owl-carousel .owl-nav  {
+    display: flex;
+    justify-content: end;
+    margin: 0;
+}
+::ng-deep .owl-carousel .owl-nav [class*=owl-] {
+    border-radius: 99px;
+    color: #000;
+}
